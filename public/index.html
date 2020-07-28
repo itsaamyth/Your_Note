@@ -7,13 +7,36 @@
     <title>Document</title>
     <script src="jquery.js"></script>
     <script src="todolist.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <input type="text" id="newtodo">
-    <br>
-    <button id="addtodo">ADD</button>
-    <ul id="todolist">
-        <li>Task 1</li>
-    </ul>
+    <div class="container" >
+        <div class="shadow p-3 mb-5 bg-white rounded" >   
+        <div id="myDIV" class="header">
+          <h2 style="margin-top:3px;">Welcome to Your Note Application
+          <img src="notepad.png" style="height: 100px;width: 100px;" ></h2><br>
+          <input type="text" id="myInput" placeholder="what's in your mind ?">
+          <select id="priority" name="Priority" class="addBtn" >
+              <option>High</option>
+              <option>Moderate</option>
+              <option>Low</option>
+          </select>
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        
+        <ul id="myUL">
+          <li>Hit the gym</li>
+          <li class="checked">Pay bills</li>
+          <li>Meet George</li>
+          <li>Buy eggs</li>
+          <li>Read a book</li>
+          <li>Organize office</li>
+        </ul>
+        </div>
+        </div> 
+
 </body>
 </html>
