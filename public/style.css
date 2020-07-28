@@ -1,14 +1,3 @@
-#todobox {
-    width: 100%;
-    margin: 0;
-    
-  }
-.todohead{
-    margin-bottom: 5%;
-    margin-top: 2%;
-}
-  
-  
 body {
     margin: 0;
     min-width: 250px;
@@ -130,4 +119,3 @@ body {
   
   .addBtn:hover {
     background-color: #bbb;
-  }
