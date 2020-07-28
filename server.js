@@ -10,6 +10,11 @@ srv.get('/hello', function (req, res) {
     res.send("Hello")
 })
 
+srv.get('/',(req,res)=>{
+    res.sendFile('./public/index.html',
+    {root:__dirname})
+})
+
 srv.use('/public', express.static(__dirname + "/public"))
 
 srv.use('/todos', todoRoute)
