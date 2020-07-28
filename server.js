@@ -15,7 +15,8 @@ srv.get('/',(req,res)=>{
     {root:__dirname})
 })
 
-srv.use('/public', express.static(__dirname + "/public"))
+// srv.use('/public', express.static(__dirname + "/public"))
+srv.use(express.static('public'))
 
 srv.use('/todos', todoRoute)
 
